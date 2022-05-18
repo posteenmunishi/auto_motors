@@ -1,10 +1,16 @@
 import React from 'react';
-import Slider from '../components/Slider';
+import Hero from '../components/Hero';
+import BrandNewSection from '../components/BrandNewSection';
+import Featured from '../components/Featured';
 
 const Home = () => {
   return (
     <div>
-        <Slider />
+        <Hero />
+        <div className="mx-10">
+          <BrandNewSection />
+          <Featured />
+        </div>
     </div>
   )
 }

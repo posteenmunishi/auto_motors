@@ -8,10 +8,10 @@ import { FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-black text-white">
-      <div className="grid md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 ">
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 py-8">
         <div>
           <h2 className="text-yellow-500 font-bold pb-4">Automotors</h2>
-          <p className="max-w-md">
+          <p className="w-3/4">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
           </p>
@@ -36,7 +36,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="py-6">
+      <div className="py-5 bg-gray-900">
         <p className="text-center text-yellow-300">&copy;copyright 2022, All rights reserved by Automotors</p>
       </div>
     </div>
