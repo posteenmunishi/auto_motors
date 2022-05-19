@@ -1,14 +1,14 @@
 import React from 'react';
-import Button from './Button';
 import Grid from './Grid';
+import Section, {SectionTitle, SectionBody} from './Section';
 import Heading from './Heading';
-import Section, { SectionBody, SectionTitle } from './Section';
-import buyImage from '../assets/images/buyImage.jpg';
+import Button from './Button';
+import sellImage from '../assets/images/saleImage.jpg';
 
-const Hero = () => {
+const SellSection = () => {
   return (
-    <div className="bg-gray-600">
-      <div className="ml-6">
+    <div className="my-36">
+        <div className="ml-6">
         <Grid
           col="grid-cols-2"
         >
@@ -18,9 +18,9 @@ const Hero = () => {
                 <Heading
                   fontSize="text-3xl"
                   textTransformation=" uppercase"
-                  textColor="text-white"
+                  textColor="text-black"
                 >
-                  Thinking of buying a vehicle?
+                 Thinking of selling a vehicle?
                 </Heading>
               </SectionTitle>
               <SectionBody>
@@ -39,19 +39,20 @@ const Hero = () => {
                   backgroundColor="bg-orange-500"
                   textColor="text-black"
                 >
-                  Start your search
+                  Sell with us now
                 </Button>
               </SectionBody>
             </Section>
           </div>
+
           <div>
-            <img src={buyImage} alt="buyCar" />
+            <img src={sellImage} alt="buyCar" />
           </div>
         </Grid>
       </div>
-
+ 
     </div>
   )
 }
 
-export default Hero
+export default SellSection

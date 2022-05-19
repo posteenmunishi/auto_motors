@@ -18,7 +18,7 @@ const BrandNewSection = () => {
             </div>
             <div className="my-4">
                 <Grid
-                    col="2"
+                    col="grid-cols-2"
                 >
                 <div className="w-3/4">
                     <p className="mb-3">
@@ -30,7 +30,7 @@ const BrandNewSection = () => {
                     </p>
                     <Button
                         backgroundColor="bg-orange-500"
-                        textColor="text-black font-bold"
+                        textColor="text-black"
                     >
                         Search
                     </Button>

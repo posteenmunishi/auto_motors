@@ -1,5 +1,5 @@
 import Footer from "./components/Footer";
-// import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {useRouter} from "./utils/routes";
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <Router>
-        {/* <Navbar /> */}
+        <Navbar />
         <Routes>
           {routes &&
             routes.map((r) => (

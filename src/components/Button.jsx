@@ -7,7 +7,7 @@ const Button = props => {
 
     const bgHover = props.backgroundColorHover ? 'hover:' + props.backgroundColorHover : ''
 
-    const text = props.textColor ? props.textColor : 'text-white'
+    const text = props.textColor ? props.textColor : ''
 
     const textHover = props.textColorHover ? 'hover:' + props.textColorHover : 'text-white'
 

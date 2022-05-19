@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 
 const Grid = props => {
 
-    const col = props.col ? `grid-cols-${props.col}` : ''
+    const col = props.col ? props.col : ''
     //const lgCol = props.lgCol ? `md:grid-cols-${props.lgCol}`: ''
-    const mdCol = props.mdCol ? `md:grid-cols-${props.mdCol}` : ''
-    const smCol = props.smCol ? `sm:grid-cols-${props.smCol}` : ''
-    const gap = props.gap ? `gap-${props.gap}`: '0'
+    const mdCol = props.mdCol ? props.mdCol : ''
+    const smCol = props.smCol ? props.smCol : ''
+    const gap = props.gap ? props.gap : '0'
 
 
     return (
@@ -18,10 +18,10 @@ const Grid = props => {
 }
 
 Grid.propTypes = {
-    col: PropTypes.number.isRequired,
-    mdCol: PropTypes.number,
-    smCol: PropTypes.number,
-    gap: PropTypes.number
+    col: PropTypes.string.isRequired,
+    mdCol: PropTypes.string,
+    smCol: PropTypes.string,
+    gap: PropTypes.string
 }
 
 export default Grid

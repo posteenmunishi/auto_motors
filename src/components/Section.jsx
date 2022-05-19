@@ -18,7 +18,7 @@ export const SectionTitle = props => {
 
 export const SectionBody = props => {
     return (
-        <div className="section__body">
+        <div className="">
             {props.children}
         </div>
     )
