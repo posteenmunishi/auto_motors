@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <div className="bg-gray-900 p-5">
+    <div className="bg-gray-800 p-4">
       <div className="nav__section">
         <div>
           <Link className="hover:text-white" to="/">
