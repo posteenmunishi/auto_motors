@@ -3,7 +3,8 @@ import Grid from './Grid';
 import Heading from './Heading';
 import ProductCard from './ProductCard';
 import Section, { SectionTitle, SectionBody } from './Section';
-import productData from '../assets/data/products';
+import productData from '../assets/data/products'
+import "./Featured.css"
 
 const Featured = () => {
     return (
@@ -18,14 +19,15 @@ const Featured = () => {
                         Featured list
                     </Heading>
                 </SectionTitle>
+               
                 <SectionBody>
-                        <Grid
-                            col="grid-cols-4"
-                        >
+                     
+                      <div class="raw"> 
+                      <div class="column">
                             {
                                 productData.getProducts(8).map((item, index) => (
                                 
-                                    <ProductCard
+                                    <ProductCard 
                                         key={index}
                                         img01={item.image01}
                                         img02={item.image02}
@@ -36,8 +38,10 @@ const Featured = () => {
                                     />
                                 ))
                             }
-                        </Grid>
+                           </div> 
+                         </div>  
                     </SectionBody>
+                  
             </Section>
 
 

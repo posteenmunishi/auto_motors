@@ -9,10 +9,8 @@ const Hero = () => {
   return (
     <div className="bg-gray-600">
       <div className="ml-6">
-        <Grid
-          col="grid-cols-2"
-        >
-          <div className="py-12">
+      <div class="md:flex">
+          <div class="py-12 ">
             <Section>
               <SectionTitle>
                 <Heading
@@ -44,10 +42,16 @@ const Hero = () => {
               </SectionBody>
             </Section>
           </div>
-          <div>
-            <img src={buyImage} alt="buyCar" />
+        
+          <div class="py-14">
+            <img
+              class="  px-3"
+              src={buyImage}
+              alt="Man looking at item at a store"
+            />
           </div>
-        </Grid>
+    
+        </div>
       </div>
 
     </div>

@@ -1,0 +1,22 @@
+
+@media (max-width: 991px){
+  
+    .li{
+ display: none;
+
+    }
+    .list{
+        display: block;
+        justify-content: center;
+        align-items: center;
+           }
+           .h2{
+            margin-top: 0px;
+           }
+}
+@media (min-width: 990px){
+    .list{
+        display: none;
+    }
+
+}

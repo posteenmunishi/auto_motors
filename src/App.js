@@ -10,6 +10,7 @@ function App() {
     <div>
       <Router>
         <Navbar />
+
         <Routes>
           {routes &&
             routes.map((r) => (
@@ -18,7 +19,7 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-
+      
     </div>
   );
 }

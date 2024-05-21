@@ -3,7 +3,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'mobile-only': { 'max': '991.98px' },
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("tw-elements/plugin.cjs")]
 }

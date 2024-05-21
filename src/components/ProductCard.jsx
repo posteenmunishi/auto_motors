@@ -8,7 +8,7 @@ import Button from './Button';
 const ProductCard = props => {
 
     return (
-        <div className="m-3">
+        <div className="md:grid-cols-4">
             <Link to={`product/${props.slug}`}>
                 <div className="image mb-3">
                     <img src={props.img01} alt="" />
